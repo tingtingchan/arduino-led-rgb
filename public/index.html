@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Arduino rgb led</title>
+	<link rel="stylesheet" href="/css/styles.css">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="/lib/jscolor.js"></script>
+</head>
+<body>
+	<div class="controller-wrap">
+		<div class="slidecontainer">
+			<input id="red" class="slider" type="range" min="0" max="255" step="1" value="0">
+			<input id="green" class="slider" type="range" min="0" max="255" step="1" value="0">
+			<input id="blue" class="slider" type="range" min="0" max="255" step="1" value="0">
+		</div>
+		<input class="jscolor {onFineChange:'pickColor(this);'}" value="ab2567">
+	</div>
+	<script src="/js/client.js"></script>
+
+
+</body>
+</html>
